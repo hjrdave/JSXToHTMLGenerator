@@ -31,18 +31,10 @@ export default function Header() {
                                         className={'pe-4 text-white'}
                                         icon={<i className="fa-brands fa-html5 pe-2"></i>}
                                         subItems={[
-                                            { text: 'Example', path: '/html-generator/example' },
-                                            { text: 'Header', path: '/html-generator/header' },
-                                            { text: 'Footer', path: '/html-generator/footer' },
-                                            { text: 'CorpLeadershipPage', path: '/html-generator/corp-leadership-page' }
-                                        ]}
-                                    />
-                                    <NavItem
-                                        text={'React Bootstrap Forms'}
-                                        className={'pe-4 text-white'}
-                                        icon={<i className="fa-brands fa-bootstrap pe-2"></i>}
-                                        subItems={[
-                                            { text: 'Default', path: '/react-bootstrap-forms/default' },
+                                            { text: 'Example', path: '/example' },
+                                            { text: 'Header', path: '/header' },
+                                            { text: 'Footer', path: '/footer' },
+                                            { text: 'CorpLeadershipPage', path: '/corp-leadership-page' }
                                         ]}
                                     />
                                 </div>

@@ -2,19 +2,19 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import DesignViewFrame from '../../atoms/DesignViewFrame';
 import CodeOutput from '../../organisms/CodeOutput';
-import useCSS from 'react-cork/use-css';
-import useHTML from 'react-cork/use-html';
-import useTemplate from '../../../../hooks/use-template';
+import useCSS from 'react-cork/useCss';
+import useHTML from 'react-cork/useHtml';
+import useTemplate from '../../../../hooks/useTemplate';
 
 interface Props {
     children?: JSX.Element | JSX.Element[];
-    folderPath: string;
     name: string;
+    companyFolderName: string;
     compProps: { [key: string]: any };
     CompToStaticHTML: (props: any) => JSX.Element;
 };
 
-export default function CompBuilder({ children, compProps, CompToStaticHTML, name, folderPath }: Props) {
+export default function CompBuilder({ children, compProps, CompToStaticHTML, name, companyFolderName }: Props) {
     const css = useCSS();
     const html = useHTML();
 
@@ -33,15 +33,15 @@ export default function CompBuilder({ children, compProps, CompToStaticHTML, nam
     //imports CSS and JSS files
     React.useEffect(() => {
         const getCssString = async () => {
-            let cssString = await import(`!!raw-loader!sass-loader!postcss-loader!../../../../scenes/HtmlGenerators${folderPath}/${name}/Export/${name}.module.scss`);
+            let cssString = await import(`!!raw-loader!sass-loader!postcss-loader!../../../../${companyFolderName}/scenes/${name}/Export/${name}.module.scss`);
             setRawCssString((typeof cssString.default === 'string') ? cssString.default as any : '');
         };
         const getCssClassNames = async () => {
-            let cssString = await import(`../../../../scenes/HtmlGenerators${folderPath}/${name}/Export/${name}.module.scss`);
+            let cssString = await import(`../../../../${companyFolderName}/scenes/${name}/Export/${name}.module.scss`);
             setCssNamespaces((cssString?.default) ? cssString.default : {});
         };
         const getJsString = async () => {
-            let jsString = await import(`!!raw-loader!ts-loader!../../../../scenes/HtmlGenerators${folderPath}/${name}/Export/scripts.ts`);
+            let jsString = await import(`!!raw-loader!ts-loader!../../../../${companyFolderName}/scenes/${name}/Export/scripts.ts`);
             setRawJsString((typeof jsString.default === 'string') ? jsString.default : '');
         };
         getCssString();

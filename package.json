@@ -31,7 +31,7 @@
     "pako": "^2.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
-    "react-cork": "^1.0.0-alpha.27",
+    "react-cork": "^1.0.0-alpha.38",
     "react-day-picker": "^8.5.1",
     "react-dom": "^18.2.0",
     "react-router": "^6.4.4",
@@ -49,7 +49,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:widgets": "webpack",
+    "build": "react-scripts build",
     "test": "react-scripts test"
   },
   "eslintConfig": {
@@ -71,9 +71,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
     "@types/pako": "^2.0.0",
     "@types/react-bootstrap": "^0.32.32",
-    "babel-loader": "^9.1.0",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",

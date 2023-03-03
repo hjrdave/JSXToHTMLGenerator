@@ -1,5 +1,5 @@
 import React from 'react';
-import useClipboard from 'react-cork/use-clipboard';
+import useClipboard from 'react-cork/useClipboard';
 import styles from './Copy.module.scss';
 
 interface Props {

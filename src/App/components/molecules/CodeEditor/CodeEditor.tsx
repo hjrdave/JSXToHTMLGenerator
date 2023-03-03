@@ -3,7 +3,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Editor, { DiffEditor, useMonaco, loader } from "@monaco-editor/react";
 import Copy from '../../atoms/Copy';
-import useClipboard from 'react-cork/use-clipboard';
+import useClipboard from 'react-cork/useClipboard';
 
 import styles from './CodeEditor.module.scss';
 
