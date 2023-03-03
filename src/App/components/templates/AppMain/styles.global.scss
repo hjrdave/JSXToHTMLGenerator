@@ -1,0 +1,7 @@
+//@import '../../../../../node_modules/bootstrap/scss/bootstrap.scss';
+@use "../../../styles/variables.scss" as *;
+@import "~bootstrap/scss/bootstrap.scss";
+
+.App {
+    background-color: $grey-3;
+}

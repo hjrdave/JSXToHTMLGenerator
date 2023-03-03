@@ -1,0 +1,57 @@
+@use "../../../../App/styles/variables.scss" as *;
+@use "../../../../_SevenCorners/styles/variables.scss" as sc;
+
+.compContainer {
+    width: 100%;
+    background-color: sc.$blue-2;
+}
+
+.listGroup {
+    list-style-type: none;
+
+    a {
+        color: #49A8E5;
+        text-decoration: none;
+
+        &:hover {
+            color: sc.$blue-link;
+        }
+
+
+    }
+
+    button {
+        @extend a;
+
+        &:active {
+            color: #49A8E5 !important;
+        }
+
+        &:focus {
+            color: #49A8E5 !important;
+        }
+
+        &:visited {
+            color: #49A8E5 !important;
+        }
+    }
+
+}
+
+.icon {
+    color: sc.$blue-info;
+}
+
+.copyright {
+    font-size: .85rem;
+    background-color: sc.$blue-3;
+
+    a {
+        color: #49A8E5;
+        text-decoration: none;
+    }
+}
+
+.address {
+    color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Builder: Preview</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    /*Component Styles*/
+    .Footer_compContainer__quOjx {
+      width: 100%;
+      background-color: #004674;
+    }
+
+    .Footer_listGroup__qCMSg {
+      list-style-type: none;
+    }
+
+    .Footer_listGroup__qCMSg a,
+    .Footer_listGroup__qCMSg button {
+      color: #49A8E5;
+      text-decoration: none;
+    }
+
+    .Footer_listGroup__qCMSg a:hover,
+    .Footer_listGroup__qCMSg button:hover {
+      color: #a9d5ea;
+    }
+
+    .Footer_listGroup__qCMSg button:active {
+      color: #49A8E5 !important;
+    }
+
+    .Footer_listGroup__qCMSg button:focus {
+      color: #49A8E5 !important;
+    }
+
+    .Footer_listGroup__qCMSg button:visited {
+      color: #49A8E5 !important;
+    }
+
+    .Footer_icon__gSEwD {
+      color: #4baab3;
+    }
+
+    .Footer_copyright__bnec- {
+      font-size: 0.85rem;
+      background-color: #001E33;
+    }
+
+    .Footer_copyright__bnec- a,
+    .Footer_copyright__bnec- .Footer_listGroup__qCMSg button,
+    .Footer_listGroup__qCMSg .Footer_copyright__bnec- button {
+      color: #49A8E5;
+      text-decoration: none;
+    }
+
+    .Footer_address__s0DLp {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /*END Comp Styles*/
+  </style>
+</head>
+
+<body>
+  <div class="App" style="background-color: #DDDDDD">
+    <nav class="navbar bg-dark" style="background: black!important;
+        height: 50px">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-white">
+          <i class="fa-solid fa-code pe-2 text-white"></i>
+          Builder
+        </span>
+        <a href='http://localhost:3000/components/footer' class="text-white pe-2" style="text-decoration: none;">
+          <i class="fa-solid fa-cube pe-1"></i>
+          Component Mode
+        </a>
+      </div>
+    </nav>
+    <div class='d-flex'>
+      <div style="height: calc(100vh - 50px)"></div>
+      <div class='d-flex flex-column justify-content-between' style='width: 100%'>
+        <div class='container-fluid p-3'>
+          <div class='row'>
+            <div class='col'>
+              <h2>Preview: Footer</h2>
+              <div class='col pt-4'>
+                <!--Footer HTML-->
+                <div class="Footer_compContainer__quOjx text-white">
+                  <div class="container">
+                    <div class="px-3 row">
+                      <div class="px-3 pt-4 col-lg-2 col-md-6">
+                        <div class="d-flex flex-column align-items-center align-items-lg-start"><img src="/"
+                            class="img-fluid p-sm-4 p-md-0" alt="Seven Corners" />
+                          <p class="Footer_address__s0DLp pt-2 mb-0 text-sm-center text-md-start">303 Congressional
+                            Blvd.</p>
+                          <p class="Footer_address__s0DLp mb-0 text-sm-center text-md-start">Carmel, Indiana 46032</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-start justify-content-md-center pt-4 col">
+                        <div>
+                          <h6 class="text-uppercase fw-bold">Connect</h6>
+                          <div class="pt-2" style="width:125px">
+                            <div class="d-flex justify-content-between"><a href="https://twitter.com/sevencornersinc"
+                                target="_blank" rel="noopener" style="text-decoration:none"><i
+                                  class="Footer_icon__gSEwD fa-brands fa-twitter fs-4"></i></a><a
+                                href="https://www.facebook.com/sevencornersinc" target="_blank" rel="noopener"
+                                style="text-decoration:none"><i
+                                  class="Footer_icon__gSEwD fa-brands fa-facebook fs-4"></i></a><a
+                                href="https://www.linkedin.com/company/251002" target="_blank" rel="noopener"
+                                style="text-decoration:none"><i
+                                  class="Footer_icon__gSEwD fa-brands fa-linkedin fs-4"></i></a>
+                            </div>
+                            <div class="d-flex justify-content-between pt-3"><a
+                                href="https://www.pinterest.com/SevenCorners/pins/" target="_blank" rel="noopener"
+                                style="text-decoration:none"><i
+                                  class="Footer_icon__gSEwD fa-brands fa-pinterest fs-4"></i></a><a
+                                href="https://www.youtube.com/channel/UCK0sBHm6pAiRQbpP1CmDohA" target="_blank"
+                                rel="noopener" style="text-decoration:none"><i
+                                  class="Footer_icon__gSEwD fa-brands fa-youtube fs-4"></i></a><a
+                                href="https://www.instagram.com/seven.corners.inc/" target="_blank" rel="noopener"
+                                style="text-decoration:none"><i
+                                  class="Footer_icon__gSEwD fa-brands fa-instagram fs-4"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-start justify-content-md-center pt-4 col">
+                        <div>
+                          <h6 class="text-uppercase fw-bold">Our Markets</h6>
+                          <ul class="Footer_listGroup__qCMSg ps-0"><a href="https://www.sevencorners.com/"
+                              target="_blank" rel="noopener" style="text-decoration:none">
+                              <li>Consumer Insurance</li>
+                            </a><a href="https://www.sevencorners.com/about/gov" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>Government Solutions</li>
+                            </a><a href="https://www.sevencorners.com/about/agent" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>Agents</li>
+                            </a></ul>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex justify-content-start justify-content-md-center pt-4 col-lg-3 col-md-6 col-sm-6">
+                        <div>
+                          <h6 class="text-uppercase fw-bold">Products</h6>
+                          <ul class="Footer_listGroup__qCMSg ps-0"><a
+                              href="https://www.sevencorners.com/plans/trip-protection" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>Roundtrip® for U.S. Residents</li>
+                            </a><a href="https://www.sevencorners.com/plans/travel-medical-insurance" target="_blank"
+                              rel="noopener" style="text-decoration:none">
+                              <li>Seven Corners® Travel Medical Plans</li>
+                            </a><a href="https://www.sevencorners.com/plans/student-travel-insurance" target="_blank"
+                              rel="noopener" style="text-decoration:none">
+                              <li>Seven Corners® Student Plans Get Away USA</li>
+                            </a><a href="https://www.sevencorners.com/coronavirus/annual-travel-insurance"
+                              target="_blank" rel="noopener" style="text-decoration:none">
+                              <li>Wander® Frequent Travelers Plus</li>
+                            </a><a href="https://www.sevencorners.com/plans/visitors-insurance" target="_blank"
+                              rel="noopener" style="text-decoration:none">
+                              <li>Inbound® USA Plans</li>
+                            </a><a href="https://www.sevencorners.com/plans/medevac-repatriation-insurance"
+                              target="_blank" rel="noopener" style="text-decoration:none">
+                              <li>Medical Evacuation and Repatriation</li>
+                            </a></ul>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-start justify-content-md-center pt-4 col-md-3 col-sm-6">
+                        <div>
+                          <h6 class="text-uppercase fw-bold">Resources</h6>
+                          <ul class="Footer_listGroup__qCMSg ps-0"><a
+                              href="https://www.sevencorners.com/about/corporate" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>About Us</li>
+                            </a><a href="https://www.sevencorners.com/about/assist" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>24 Hour Travel Assistance</li>
+                            </a><a href="https://www.sevencorners.com/about/other-services/discounts" target="_blank"
+                              rel="noopener" style="text-decoration:none">
+                              <li>Services &amp; Discounts</li>
+                            </a><a href="https://www.sevencorners.com/about/self-service/claims" target="_blank"
+                              rel="noopener" style="text-decoration:none">
+                              <li>Claims</li>
+                            </a><a href="https://www.sevencorners.com/faq" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>F.A.Q</li>
+                            </a><a href="https://www.sevencorners.com/faq/glossary" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>Glossary</li>
+                            </a><a href="https://www.sevencorners.com/developer" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>Developer Portal</li>
+                            </a><a href="https://status.sevencorners.com/" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>System Status</li>
+                            </a><a href="https://www.sevencorners.com/about/corporate/careers" target="_blank"
+                              rel="noopener" style="text-decoration:none">
+                              <li>Careers</li>
+                            </a><a href="https://www.sevencorners.com/about/contact" target="_blank" rel="noopener"
+                              style="text-decoration:none">
+                              <li>Contact Us</li>
+                            </a>
+                            <div class="btn-group dropend">
+                              <button type="button" class="btn btn-link dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                aria-expanded="false">Media Contact</button>
+                              <div class="dropdown-menu p-3">
+                                <p class="mb-0"><strong>Lauren Fielder</strong></p>
+                                <p class="mb-0"><small>317-607-1168</small></p>
+                                <p class="mb-0">
+                                  <small><a href="mailto:email@example.com">lfiedler@bohlsengroup.com</a></small>
+                                </p>
+                                <p class="mb-0">
+                                  <small><a href="https://www.bohlsengroup.com/"
+                                      target="_blank">bohlsengroup.com</a></small>
+                                </p>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="Footer_copyright__bnec- py-2 col">
+                        <p class="mb-0 text-center"><small>Copyright © 2023 Seven Corners Inc. All rights
+                            reserved.</small></p>
+                        <p class="mb-0 pt-1 text-center">
+                          <small><a href="https://www.sevencorners.com/about/legal/privacy-policy" target="_blank"
+                              rel="noopener" style="text-decoration:none">Privacy</a>  |  <a
+                              href="https://www.sevencorners.com/about/legal/cookies" target="_blank" rel="noopener"
+                              style="text-decoration:none">Cookies</a>  |  <a
+                              href="https://www.sevencorners.com/about/legal/terms-of-use" target="_blank"
+                              rel="noopener" style="text-decoration:none">Terms of Use</a>  |  <a
+                              href="https://www.sevencorners.com/about/legal/information-security" target="_blank"
+                              rel="noopener" style="text-decoration:none">Security</a></small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END Footer HTML-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='p-1 d-flex justify-content-center'>
+          <small style='font-size: .75rem;'>Copyright 2023 Builder</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/bc8edc6f62.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

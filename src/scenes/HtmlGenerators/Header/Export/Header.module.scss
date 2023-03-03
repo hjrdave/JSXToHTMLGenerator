@@ -1,0 +1,173 @@
+@use "../../../../App/styles/variables.scss" as *;
+@use "../../../../_SevenCorners/styles/variables.scss" as sc;
+@use "~/node_modules/bootstrap/scss/functions" as fn;
+@use 'sass:color';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.compContainer {
+    background: linear-gradient(#035b93, #004A79);
+    width: 100%;
+
+    :global(.dropdown-toggle) {
+        border: none !important;
+
+        &:focus {
+            border: none !important;
+        }
+
+        &:active {
+            border: none !important;
+        }
+
+        &:hover {
+            border: none !important;
+        }
+
+        &:visited {
+            border: none !important;
+        }
+
+        &:focus-within {
+            border: none !important;
+        }
+
+        &:focus-visible {
+            border: none !important;
+        }
+    }
+}
+
+.navLink {
+    font-size: $font-size-base - .1rem !important;
+    font-weight: $font-weight-bold;
+
+    :global(.nav-link) {
+        color: white !important;
+    }
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px !important;
+
+    @include media-breakpoint-up(sm) {
+        width: 100%;
+        max-width: 250px !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 150px;
+    }
+}
+
+
+
+.searchBtn {
+    background-color: sc.$orange !important;
+    border: $orange !important;
+
+    &:hover {
+        background-color: darken(sc.$orange, 50%) !important;
+        border: darken(sc.$orange, 50%) !important;
+    }
+}
+
+.megaMenu {
+
+    background-color: sc.$blue;
+    border-radius: 0.15rem;
+
+    h6 {
+        color: rgba(255, 255, 255, .65);
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, .65);
+
+        &:hover {
+            color: rgba(255, 255, 255, .8);
+        }
+    }
+
+    p {
+        font-size: $font-size-base - .1rem;
+        color: white;
+    }
+
+    @media (min-width: 992px) {
+        min-width: 1000px;
+        background-color: white;
+        border-radius: 0.375rem;
+
+        h6 {
+            color: $grey-2;
+        }
+
+        p {
+            color: black !important;
+        }
+
+        a {
+            text-decoration: none;
+            color: sc.$blue !important;
+        }
+
+
+    }
+
+
+}
+
+;
+
+.megaMenuColumnTwo {
+
+    height: 100%;
+
+    @media (min-width: 992px) {
+        background-color: $grey-5;
+        border-bottom-right-radius: 0.375rem;
+        border-top-right-radius: 0.375rem;
+    }
+}
+
+
+
+.dropdownMenu {
+
+    background-color: sc.$blue !important;
+
+    :global(.dropdown-item) {
+        color: white;
+
+        &:hover {
+            background-color: sc.$blue-2;
+            color: white;
+        }
+    }
+
+    @media (min-width: 992px) {
+        background-color: white !important;
+
+        :global(.dropdown-item) {
+            color: black;
+
+            &:hover {
+                background-color: $grey-2;
+                color: white;
+            }
+        }
+
+    }
+}
+
+.helpNumber {
+    font-size: $font-size-base - .25rem;
+}
+
+.utilIcon {
+    color: sc.$orange;
+}

@@ -1,0 +1,8 @@
+@use "../../../../App/styles/variables.scss" as *;
+@use "../../../../_SevenCorners/styles/variables.scss" as sc;
+
+.compContainer {
+    p {
+        font-size: $font-size-base + 2rem !important;
+    }
+}
