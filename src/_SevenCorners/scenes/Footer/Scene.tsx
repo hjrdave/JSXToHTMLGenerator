@@ -2,6 +2,7 @@ import React from 'react';
 import CompBuilder from '../../../App/components/templates/CompBuilder';
 import Comp from './Export/Comp';
 import props from './Export/props';
+import "../../styles/styles.global.scss";
 
 export default function Scene() {
 

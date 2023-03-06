@@ -1,57 +1,76 @@
-@use "../../../../App/styles/variables.scss" as *;
-@use "../../../../_SevenCorners/styles/variables.scss" as sc;
+@use "../../../styles/variables.scss" as *;
 
 .compContainer {
     width: 100%;
-    background-color: sc.$blue-2;
-}
-
-.listGroup {
-    list-style-type: none;
-
+    background-color: $dark;
     a {
-        color: #49A8E5;
+        color: $grey-2;
         text-decoration: none;
+        transition: color 0.2s;
+        font-size: $font-size-base - 0.2rem;
 
         &:hover {
-            color: sc.$blue-link;
-        }
-
-
-    }
-
-    button {
-        @extend a;
-
-        &:active {
-            color: #49A8E5 !important;
-        }
-
-        &:focus {
-            color: #49A8E5 !important;
-        }
-
-        &:visited {
-            color: #49A8E5 !important;
+            color: $grey;
         }
     }
 
-}
-
-.icon {
-    color: sc.$blue-info;
-}
-
-.copyright {
-    font-size: .85rem;
-    background-color: sc.$blue-3;
-
-    a {
-        color: #49A8E5;
-        text-decoration: none;
+    .logo {
     }
-}
 
-.address {
-    color: rgba(255, 255, 255, 0.5);
+    .listGroup {
+        list-style-type: none;
+        font-size: $font-size-base - 0.2rem;
+
+        button {
+            @extend a;
+
+            &:active {
+                color: #49a8e5 !important;
+            }
+
+            &:focus {
+                color: #49a8e5 !important;
+            }
+
+            &:visited {
+                color: #49a8e5 !important;
+            }
+        }
+    }
+
+    .icon {
+        color: $grey-2;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $grey;
+        }
+    }
+
+    .copyright {
+        font-size: 0.85rem;
+        background-color: $dark-2;
+        color: $grey-2;
+
+        a {
+            color: $grey-2;
+            text-decoration: none;
+            &:hover {
+                color: $grey-2;
+            }
+        }
+    }
+
+    .address {
+        color: $grey-2;
+        font-size: $font-size-base - 0.2rem;
+    }
+    .mediaContact {
+        a {
+            font-size: $font-size-base - 0.2rem;
+            &:hover {
+                color: $grey-2 !important;
+            }
+        }
+    }
 }

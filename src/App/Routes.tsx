@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Outlet, Routes as RRRoutes } from 'react-router-dom';
+import pageMap from '../page-map';
 
 //App Pages
 import Home from './scenes/Home';
@@ -8,6 +9,10 @@ import Home from './scenes/Home';
 import SCExampleScene from '../_SevenCorners/scenes/Example';
 import SCFooterScene from '../_SevenCorners/scenes/Footer';
 import SCHeaderScene from '../_SevenCorners/scenes/Header';
+// pageMap.map((item) => (
+
+//     const [item.]
+// ));
 
 export default function Routes() {
 

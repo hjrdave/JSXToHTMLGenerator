@@ -1,8 +1,24 @@
 //Seven Corners Brand
-$blue: #1381C6;
-$blue-2: #004674;
-$blue-3: #003353;
-$blue-4: #001E33;
-$blue-info: #4baab3;
-$blue-link: #a9d5ea;
-$orange: #F5852B;
+$primary: #602651;
+$secondary: #ffb837;
+$dark: #4a4a4a;
+$dark-2: #333132;
+$grey: #ffffff;
+$grey-2: #c0c1c2;
+$grey-3: #5f636c;
+$success: #198754;
+$warning: #ffc107;
+$danger: #dc3545;
+$info: #0dcaf0;
+
+//Fonts and Text
+$font-weight-light: 200;
+$font-weight-bold: 500;
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.7;
+$h4-font-size: $font-size-base * 1.35;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+//font family: Montserrat

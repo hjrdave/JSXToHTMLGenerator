@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { IExport } from './interfaces';
 import Image from '../../../components/atoms/Image';
 import Link from '../../../components/atoms/Link';
+import SCLogo from '../../../images/logo-sc-vert-white.webp';
 import styles from './Footer.module.scss';
 
 export default function Comp({ address, connect, markets, products, resources, legal }: IExport.Props) {
@@ -12,11 +13,21 @@ export default function Comp({ address, connect, markets, products, resources, l
             <div className={`${styles.compContainer} text-white`}>
                 <Container>
                     <Row className={'px-3'}>
-                        <Col md={6} lg={2} className={'px-3 pt-4'}>
+                        <Col md={4} lg={2} className={'px-3 pt-4'}>
                             <div className={'d-flex flex-column align-items-center align-items-lg-start'}>
-                                <Image path={'/'} className={'p-sm-4 p-md-0'} alt={'Seven Corners'} />
-                                <p className={`${styles.address} pt-2 mb-0 text-sm-center text-md-start`}>{address?.street}</p>
+                                <Image path={SCLogo} className={'p-sm-4 p-md-0'} alt={'Seven Corners'} />
+                                <p className={`${styles.address} pt-3 mb-0 text-sm-center text-md-start`}>{address?.street}</p>
                                 <p className={`${styles.address} mb-0 text-sm-center text-md-start`}>{address?.city}, {address?.state} {address?.zip}</p>
+                                <p className={`pt-4 mb-0 text-sm-center text-md-start`}>
+                                    <Link path={'https://www.sevencorners.com/about/corporate/careers'} target={'_blank'}>
+                                        <u>Careers</u>
+                                    </Link>
+                                </p>
+                                <p className={`mb-0 text-sm-center text-md-start`}>
+                                    <Link path={'https://www.sevencorners.com/about/contact'} target={'_blank'}>
+                                        <u>Contact Us</u>
+                                    </Link>
+                                </p>
                             </div>
                         </Col>
                         <Col className={'d-flex justify-content-start justify-content-md-center pt-4'}>
@@ -56,7 +67,7 @@ export default function Comp({ address, connect, markets, products, resources, l
                                         markets?.map((item, index) => (
                                             <React.Fragment key={index} >
                                                 <Link path={item.path} target={'_blank'}>
-                                                    <li>{item.text}</li>
+                                                    <li className={'pt-1'}>{item.text}</li>
                                                 </Link>
                                             </React.Fragment>
                                         ))
@@ -72,7 +83,7 @@ export default function Comp({ address, connect, markets, products, resources, l
                                         products?.map((item, index) => (
                                             <React.Fragment key={index}>
                                                 <Link path={item.path} target={'_blank'}>
-                                                    <li>{item.text}</li>
+                                                    <li className={'pt-1'}>{item.text}</li>
                                                 </Link>
                                             </React.Fragment>
                                         ))
@@ -88,12 +99,12 @@ export default function Comp({ address, connect, markets, products, resources, l
                                         resources?.map((item, index) => (
                                             <React.Fragment key={index}>
                                                 <Link path={item.path} target={'_blank'}>
-                                                    <li>{item.text}</li>
+                                                    <li className={'pt-1'}>{item.text}</li>
                                                 </Link>
                                             </React.Fragment>
                                         ))
                                     }
-                                    <div className={`btn-group dropend`}>
+                                    <div className={`btn-group dropend ${styles.mediaContact}`}>
                                         <button type="button" className="btn btn-link dropdown-toggle p-0" data-bs-toggle="dropdown" aria-expanded="false">
                                             Media Contact
                                         </button>
