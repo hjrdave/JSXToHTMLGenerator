@@ -9,6 +9,7 @@ const runSearch = () => {
     const searchControlBtn = document.querySelector('#header-search-btn');
     const utilNavContainer = document.querySelector('#header-util-navitem-container');
     const searchUtilItemBtn = document.querySelector('#header-util-search-btn');
+    const searchModal = document.querySelector('#headerSearchModal');
 
     //actions
     const detectOutside = (e: Event) => {
@@ -16,13 +17,6 @@ const runSearch = () => {
         if (!inside) {
             hideSearch(e);
         }
-    }
-    const showSearch = (e: Event) => {
-        utilNavContainer?.classList.add('d-none');
-        searchContainer?.classList.remove('d-none');
-        (searchControl as any)?.focus();
-        document.addEventListener("click", detectOutside);
-        e.stopPropagation();
     }
     const hideSearch = (e: Event) => {
         document.removeEventListener("click", detectOutside, false);
@@ -41,10 +35,17 @@ const runSearch = () => {
         }
     }
 
+    const focusSearchInput = (e: Event) => {
+
+        if (searchControl !== null) {
+            (searchControl as any)?.focus();
+        }
+    }
+
     //event listeners
-    searchUtilItemBtn?.addEventListener('click', showSearch);
     searchControlBtn?.addEventListener('click', goToSearch);
     searchControl?.addEventListener('keypress', gotToSearchOnEnter);
+    searchModal?.addEventListener('shown.bs.modal', focusSearchInput);
 
 };
 

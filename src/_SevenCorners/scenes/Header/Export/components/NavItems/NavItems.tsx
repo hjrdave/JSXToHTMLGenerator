@@ -1,8 +1,7 @@
 import React from 'react';
 import { IExport } from '../../interfaces';
 import MegaMenu from '../MegaMenu';
-// import styles from '../../Header.module.scss';
-
+import styles from "../../Header.module.scss";
 interface Props {
     megaMenu: IExport.MegaMenu;
     items: {
@@ -19,11 +18,14 @@ export default function NavItems({ items, megaMenu }: Props) {
     return (
         <>
             <div className="nav-item dropdown">
-                <button className="btn dropdown-toggle text-white px-0 px-lg-2 pt-2" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="btn dropdown-toggle text-white px-0 px-lg-2 pt-2 text-uppercase" data-bs-toggle="dropdown" aria-expanded="false">
                     {megaMenu.text}
                 </button>
                 <ul className="dropdown-menu p-0">
-                    <MegaMenu items={megaMenu} />
+                    {/* <MegaMenu items={megaMenu} /> */}
+                    <div>
+                        <p className={"p-2 mb-0"}>Mega Menu Content</p>
+                    </div>
                 </ul>
             </div>
             {
@@ -32,7 +34,7 @@ export default function NavItems({ items, megaMenu }: Props) {
                         {
                             (item.subItems) ?
                                 <div className="nav-item dropdown">
-                                    <button className="btn dropdown-toggle text-white px-0 px-lg-2 pt-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button className="btn dropdown-toggle text-white px-0 px-lg-2 pt-2 text-uppercase" data-bs-toggle="dropdown" aria-expanded="false">
                                         {item.text}
                                     </button>
                                     <ul className={`${'styles.dropdownMenu'} dropdown-menu`}>
@@ -45,7 +47,7 @@ export default function NavItems({ items, megaMenu }: Props) {
                                         }
                                     </ul>
                                 </div> :
-                                <li className="nav-item px-0 px-lg-2">
+                                <li className="nav-item px-0 px-lg-2 text-uppercase">
                                     <a className="nav-link text-white" href={item.path}>{item.text}</a>
                                 </li>
                         }

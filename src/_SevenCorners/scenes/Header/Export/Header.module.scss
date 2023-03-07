@@ -1,0 +1,83 @@
+@use "../../../styles/variables.scss" as *;
+@import "~bootstrap/scss/mixins";
+
+.compContainer {
+    background-color: $primary;
+    p {
+        font-size: $font-size-base - 0.1rem;
+    }
+    button {
+        font-size: $font-size-base - 0.1rem;
+        border: 1px solid rgba(0, 0, 0, 0) !important;
+        &:active,
+        &:hover,
+        &:focus,
+        &:visited,
+        &:focus-within,
+        &:focus-visible {
+            border: 1px solid rgba(0, 0, 0, 0) !important;
+        }
+    }
+    li {
+        font-size: $font-size-base - 0.1rem;
+        a {
+            font-size: $font-size-base - 0.1rem;
+        }
+    }
+
+    :global(.dropdown-menu) {
+        background-color: transparent;
+        border: none;
+        p {
+            color: white;
+        }
+        a {
+            color: white;
+        }
+        :global(.dropdown-item) {
+            &:hover,
+            &:active,
+            &:focus,
+            &:visited,
+            &:focus-within,
+            &:focus-visible {
+                background-color: $dark-2;
+            }
+        }
+        @media (min-width: 992px) {
+            background-color: white;
+            border: 1px solid var(--bs-border-color-translucent) !important;
+            color: black;
+            a {
+                color: black;
+            }
+            :global(.dropdown-item) {
+                &:hover,
+                &:active,
+                &:focus,
+                &:visited,
+                &:focus-within,
+                &:focus-visible {
+                    background-color: var(--bs-border-color-translucent) !important;
+                }
+            }
+        }
+    }
+
+    :global(.nav-link) {
+        font-size: $font-size-base - 0.1rem;
+    }
+    i {
+        color: $secondary;
+    }
+    .logo {
+        width: 186px;
+    }
+    .searchModal {
+        border-radius: 0.3rem;
+        background-color: $primary;
+    }
+    .searchBtn {
+        background-color: $secondary;
+    }
+}

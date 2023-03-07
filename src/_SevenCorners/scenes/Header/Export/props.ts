@@ -7,7 +7,7 @@ const props: IExport.Props = {
     logoPath: '/',
     logoAlt: 'Seven Corners',
     megaMenu: {
-        text: 'Products',
+        text: 'Insurance',
         tripInsItems: [
             {
                 text: 'RoundTrip Travel Protection',
