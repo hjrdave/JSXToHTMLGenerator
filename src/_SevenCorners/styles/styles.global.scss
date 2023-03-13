@@ -1,4 +1,47 @@
+@import "./variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
 // Custom.scss
 body {
     font-family: "Montserrat", sans-serif;
+}
+.btn {
+    box-shadow: $shadow-1;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    padding: 0.7rem 1.26rem 0.6rem 1.26rem;
+    font-size: $font-size-base - 0.2rem;
+    background-image: var(--bs-gradient);
+}
+.btn-lg {
+    font-size: $font-size-base + 0.1rem;
+}
+.btn-sm {
+    font-size: $font-size-base - 0.3rem;
+}
+.btn-secondary {
+    text-shadow: 0px 0px 19px $dark;
+    color: white;
+}
+.btn-secondary.btn-lg {
+    color: white;
+}
+.btn-link {
+    box-shadow: none;
+}
+.btn-success {
+    color: white;
+}
+.btn-success.btn-lg {
+    color: white;
+}
+.btn-danger {
+    color: white;
+}
+.btn-danger.btn-lg {
+    color: white;
+}
+.btn.dropdown-toggle {
+    background-image: none;
+    text-transform: none;
 }

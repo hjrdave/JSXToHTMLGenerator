@@ -47,9 +47,9 @@
         @media (min-width: 992px) {
             background-color: white;
             border: 1px solid var(--bs-border-color-translucent) !important;
-            color: black;
+            color: black !important;
             a {
-                color: black;
+                color: black !important;
             }
             :global(.dropdown-item) {
                 &:hover,
@@ -58,7 +58,7 @@
                 &:visited,
                 &:focus-within,
                 &:focus-visible {
-                    background-color: var(--bs-border-color-translucent) !important;
+                    background-color: var(--bs-border-color-translucent);
                 }
             }
         }
@@ -73,11 +73,11 @@
     .logo {
         width: 186px;
     }
-    .searchModal {
-        border-radius: 0.3rem;
-        background-color: $primary;
-    }
-    .searchBtn {
-        background-color: $secondary;
-    }
+}
+.searchModal {
+    border-radius: 0.3rem;
+    background-color: $primary;
+}
+.searchBtn {
+    background-color: $secondary !important;
 }

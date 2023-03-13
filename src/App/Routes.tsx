@@ -9,10 +9,7 @@ import Home from './scenes/Home';
 import SCExampleScene from '../_SevenCorners/scenes/Example';
 import SCFooterScene from '../_SevenCorners/scenes/Footer';
 import SCHeaderScene from '../_SevenCorners/scenes/Header';
-// pageMap.map((item) => (
-
-//     const [item.]
-// ));
+import SCButtonScene from '../_SevenCorners/scenes/Button';
 
 export default function Routes() {
 
@@ -24,6 +21,7 @@ export default function Routes() {
                     <Route path={'example'} element={<SCExampleScene />} />
                     <Route path={'footer'} element={<SCFooterScene />} />
                     <Route path={'header'} element={<SCHeaderScene />} />
+                    <Route path={'button'} element={<SCButtonScene />} />
                 </Route>
             </RRRoutes>
         </>
