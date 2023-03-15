@@ -5,6 +5,8 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+//buttons
 .btn {
     box-shadow: $shadow-1;
     border-radius: 0.5rem;
@@ -12,6 +14,7 @@ body {
     padding: 0.7rem 1.26rem 0.6rem 1.26rem;
     font-size: $font-size-base - 0.2rem;
     background-image: var(--bs-gradient);
+    font-weight: 550;
 }
 .btn-lg {
     font-size: $font-size-base + 0.1rem;
@@ -44,4 +47,25 @@ body {
 .btn.dropdown-toggle {
     background-image: none;
     text-transform: none;
+}
+
+//cards
+.card {
+    border-radius: 0px;
+}
+.card-header {
+    border-bottom: 0px;
+    background-color: white;
+}
+.card-footer {
+    border-top: 0px;
+    background-color: white;
+}
+
+.Card_cardBadgeSlant__NCceX {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    margin-right: -30px;
+    transform: skewX(30deg);
 }

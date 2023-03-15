@@ -13,6 +13,11 @@ const pageMap = [
         name: "Header",
         companyFolderName: "_SevenCorners",
         path: "header"
+    },
+    {
+        name: "Card",
+        companyFolderName: "_SevenCorners",
+        path: "Card"
     }
 ];
 

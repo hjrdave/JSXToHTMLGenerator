@@ -1,0 +1,11 @@
+@use "../../../../_SevenCorners/styles/variables.scss" as *;
+
+.compContainer {
+    .cardBadgeSlant {
+        position: relative;
+        width: 50px;
+        height: 100%;
+        margin-right: -30px;
+        transform: skewX(30deg);
+    }
+}
