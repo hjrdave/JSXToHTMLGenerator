@@ -11,6 +11,7 @@ import SCFooterScene from '../_SevenCorners/scenes/Footer';
 import SCHeaderScene from '../_SevenCorners/scenes/Header';
 import SCButtonScene from '../_SevenCorners/scenes/Button';
 import SCCardScene from '../_SevenCorners/scenes/Card';
+import SCHeroScene from '../_SevenCorners/scenes/Hero';
 
 export default function Routes() {
 
@@ -24,6 +25,7 @@ export default function Routes() {
                     <Route path={'header'} element={<SCHeaderScene />} />
                     <Route path={'button'} element={<SCButtonScene />} />
                     <Route path={'card'} element={<SCCardScene />} />
+                    <Route path={'hero'} element={<SCHeroScene />} />
                 </Route>
             </RRRoutes>
         </>

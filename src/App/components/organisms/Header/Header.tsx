@@ -36,7 +36,8 @@ export default function Header() {
                                             { text: 'Footer', path: '/footer' },
                                             { text: 'CorpLeadershipPage', path: '/corp-leadership-page' },
                                             { text: 'Buttons', path: '/button' },
-                                            { text: 'Card', path: '/card' }
+                                            { text: 'Card', path: '/card' },
+                                            { text: 'Hero', path: '/hero' }
                                         ]}
                                     />
                                 </div>
