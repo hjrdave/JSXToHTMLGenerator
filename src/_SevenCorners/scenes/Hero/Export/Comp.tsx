@@ -7,7 +7,7 @@ export default function Comp({ }: IExport.Props) {
 
     return (
         <>
-            <Row className={`${styles.heroSize} d-flex justify-content-center sc-bg-typography`}>
+            <Row className={`${styles.heroSize} d-flex justify-content-center sc-bg-stripes`}>
                 <Col sm={12} md={8} className={`d-flex align-items-center p-5 px-md-0`}>
                     <div>
                         <h1 className={"text-center text-md-start"}>This is a Hero Banner</h1>
