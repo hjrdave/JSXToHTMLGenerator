@@ -22,10 +22,7 @@ export default function NavItems({ items, megaMenu }: Props) {
                     {megaMenu.text}
                 </button>
                 <ul className="dropdown-menu p-0">
-                    {/* <MegaMenu items={megaMenu} /> */}
-                    <div>
-                        <p className={"p-2 mb-0"}>Mega Menu Content</p>
-                    </div>
+                    <MegaMenu items={megaMenu} />
                 </ul>
             </div>
             {
