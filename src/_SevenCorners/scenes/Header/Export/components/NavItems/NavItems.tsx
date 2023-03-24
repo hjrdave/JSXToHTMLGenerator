@@ -34,7 +34,7 @@ export default function NavItems({ items, megaMenu }: Props) {
                                     <button className="btn dropdown-toggle text-white px-0 px-lg-2 pt-2 text-uppercase" data-bs-toggle="dropdown" aria-expanded="false">
                                         {item.text}
                                     </button>
-                                    <ul className={`${'styles.dropdownMenu'} dropdown-menu`}>
+                                    <ul className={`dropdown-menu`}>
                                         {
                                             item.subItems?.map((item, index) => (
                                                 <React.Fragment key={index}>

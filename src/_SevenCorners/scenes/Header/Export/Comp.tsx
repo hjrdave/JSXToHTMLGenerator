@@ -45,30 +45,6 @@ export default function Comp({ navItems, logoPath, logoAlt, megaMenu }: IExport.
                     </div>
                 </div>
             </nav>
-            {/* <Navbar variant={'dark'} expand="lg" className={`${styles.compContainer} py-sm-0 py-md-3 px-3`}>
-                <Container fluid>
-                    <SearchModal>
-                        <Search />
-                    </SearchModal>
-                    <Navbar.Brand href={SCLogo}>
-                        <Image path={SCLogo} className={`${styles.logo} pt-3 pt-md-0`} alt={logoAlt} />
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls={toggleID} />
-                    <Navbar.Collapse id={toggleID}>
-                        <Nav className={'p-2 p-lg-0 w-100'}>
-                            <Col className={'d-lg-flex'}>
-                                <NavItems
-                                    megaMenu={megaMenu}
-                                    items={navItems}
-                                />
-                            </Col>
-                            <Col className={'d-lg-flex justify-content-end align-items-center'}>
-                                <UtilNavItems />
-                            </Col>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar> */}
         </>
     )
 }
